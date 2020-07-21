@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<br>
+
+<div class="row">
+    <form class="col s8" action="{{ url_for('predict')}}" method="POST">
+        <div class="row">
+            <div class="input-field col s8" align="center">
+                <br>
+                <h1>PREDICT YOUR SALARY</h1>
+                <br>
+                <input type="text" name="experience" class="materialize-textarea" placeholder="Experience">
+                <input type="text" name="test_score" class="materialize-textarea" placeholder="Test Scores">
+                <input type="text" name="interview_score" class="materialize-textarea" placeholder="Interview Grade">
+                <br>
+                <br>
+                <input type="submit" value="PREDICT" class="waves-effect waves-light btn">
+                <br>
+                <br>
+                <h4>{{ prediction }} </h4>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+{% endblock %}
