@@ -8,7 +8,7 @@
 
 1. Push your flask app with model on github.
 2. Go to https://heroku.com/
-3. SignUp / SignIn and select "New" button on top right.
+3. SignUp / SignIn and then select "New" button on top right.
 4. Scroll down and find "Deployment method" section.
 5. There you can see three options : "Heroku Git", "Github", "Container Registry".
 6. Select the Github option, link your Github Account with heroku.
